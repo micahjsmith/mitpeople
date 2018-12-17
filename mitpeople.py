@@ -21,7 +21,7 @@ def get_config():
 
 class Client:
 
-    _API_ROOT = 'https://mit-people-v3.cloudhub.io/people/v3'
+    _API_ROOT = 'https://mit-people-v3.cloudhub.io'
 
     def __init__(self, client_id=None, client_secret=None):
         """MIT People API client object
@@ -72,7 +72,7 @@ class Client:
             minimalData (bool): if set to true, then only ldap data is
                 returned. This makes the search much faster.
         """
-        path = '/people'
+        path = '/people/v3/people'
         params = {
             'familyName': familyName,
             'offset': offset, 
@@ -91,7 +91,7 @@ class Client:
         Args:
             kerberosId (str): the kerberos ID
         """
-        path = f'/people/{kerberosId}'
+        path = f'/people/v3/people/{kerberosId}'
         return self._get(path)
 
         params = {'department': department}
