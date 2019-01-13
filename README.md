@@ -5,6 +5,8 @@ Simple python client for the [MIT People API](https://developer.mit.edu/api-peop
 Full API documentation is available
 [here](https://anypoint.mulesoft.com/exchange/portals/mit-5/9ddddac0-4fef-400a-8144-7b537fc0e936/mit-people/1.0.0/console/summary/).
 
+Don't need programmatic access? Then just use the online [MIT People Directory](http://web.mit.edu/people.html) (some additional limitations present).
+
 ## usage
 
 Create a `config.ini` file. Credentials are requested directly from the API service. Note
